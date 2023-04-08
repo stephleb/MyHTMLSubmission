@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Stephanie's HTML Form Submission</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>REQUESTED INFORMATION FIELDS</legend>
+          <div>
+            <label for="name">NAME:</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Enter your full name"
+            />
+          </div>
+          <div>
+            <label for="location">EMAIL:</label>
+            <input
+              id="location"
+              type="text"
+              name="zipcode"
+              autofocus="on"
+              maxlength="5"
+              required
+              placeholder="Enter your Email address"
+            />
+          </div>
+          <div>
+            <label for="form-message"><font-size: 36pt> MESSAGE: </font-size:> </label>
+            </div>
+            <div>
+            <input
+              id="form-message"
+              type="text"
+              name="message"
+              autofocus="on"
+              required
+              maxlength="150"
+              placeholder="Enter your Message Here to Submit FORM --"
+            ></input>
+          </div>
+        </fieldset>
+          <h2>COUNTRY CODE:</h2>
+          <div>
+            <input id="local" name="country" type="radio" value="local" />
+            <label for="local">LOCAL</label>
+          </div>
+          <div>
+            <input id="international" name="country" type="radio" value="international" />
+            <label for="international">INTERNATIONAL</label>
+          </div>
+        </div>
+        <div>
+          <label for="phone">Phone #:</label>
+          <input
+            id="phone"
+            type="text"
+            name="phone"
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            placeholder="xxx-xxx-xxxx"
+          />
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+  </body>
+</html>
+# MyHTMLSubmission
